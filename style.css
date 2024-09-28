@@ -153,6 +153,9 @@ header {
     color: white;
 }
 
+
+
+
 .job {
     display: flex;
     flex-direction: column;
@@ -164,5 +167,92 @@ header {
     padding: 1rem;
     opacity: 1;
     border-radius: 1rem;
-     background: var(--job-bg);
+    background: var(--job-bg);
+}
+
+.job__avatar {
+    display: block;
+    border-radius: 1rem;
+    flex-grow: 0;
+    height: 4rem;
+    width: 4rem;
+    object-fit: contain;
+}
+
+.job__main {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.job__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.job__applicants {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: var(--text-color);
+}
+
+.job__applicant {
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--background);
+}
+
+.job__name {
+    font-weight: 700;
+    display: flex;
+    color: var(--text-color);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.job__company {
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary);
+}
+.job__description {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--text-color);
+}
+.job__location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.job__location img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.job__bookmark {
+    margin-left: auto;
+    background: none;
+    border: none;
+}
+.job__bookmark svg {
+    height: 1.75rem;
+    width: 1.75rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    stroke: var(--primary);
+}
+.job__bookmark svg:hover {
+    fill: var(--primary);
+}
+.job__salary {
+    font-weight: 700;
+    color: var(--primary);
 }
